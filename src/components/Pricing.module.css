@@ -1,0 +1,207 @@
+.header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.preTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-accent-sky);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+}
+
+/* Card basic styling */
+.card {
+  background-color: var(--color-bg-white);
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  border: 1px solid rgba(10, 28, 62, 0.06);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.popularCard {
+  border: 2px solid var(--color-accent-sky);
+  box-shadow: var(--shadow-lg);
+}
+
+.popularTag {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(120deg, #00B4D8 0%, #00F5D4 100%);
+  color: white;
+  padding: 6px 16px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: var(--border-radius-full);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-glow);
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.planName {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.planDesc {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.5;
+  min-height: 45px;
+}
+
+.priceRow {
+  display: flex;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.currency {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.price {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(10, 28, 62, 0.05);
+  margin: 30px 0;
+}
+
+.featuresList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+  margin-bottom: 40px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.checkIconWrapper {
+  width: 22px;
+  height: 22px;
+  background-color: var(--color-bg-accent);
+  color: var(--color-accent-sky);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.popularCard .checkIconWrapper {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--color-accent-green);
+}
+
+.featureText {
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.ctaButton {
+  background-color: var(--color-bg-light);
+  color: var(--color-primary);
+  border: 1px solid rgba(10, 28, 62, 0.08);
+  padding: 14px;
+  width: 100%;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--border-radius-full);
+}
+
+.ctaButton:hover {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.popularCta {
+  background-color: var(--color-accent-sky);
+  color: white;
+  border-color: var(--color-accent-sky);
+  box-shadow: var(--shadow-glow);
+}
+
+.popularCta:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+}

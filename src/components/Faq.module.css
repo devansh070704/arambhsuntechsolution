@@ -1,0 +1,146 @@
+.header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.preTitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--color-accent-sky);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  line-height: 1.2;
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.accordionContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faqRow {
+  background-color: var(--color-bg-white);
+  border: 1px solid rgba(10, 28, 62, 0.06);
+  border-radius: var(--border-radius-md);
+  padding: 24px 30px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.faqRow:hover {
+  border-color: var(--color-accent-sky);
+  box-shadow: var(--shadow-sm);
+}
+
+.faqRow.open {
+  border-color: var(--color-accent-sky);
+  box-shadow: var(--shadow-md);
+  background-color: var(--color-bg-white);
+}
+
+.faqHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.question {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1.4;
+  transition: var(--transition-smooth);
+}
+
+.faqRow:hover .question {
+  color: var(--color-accent-sky);
+}
+
+.faqRow.open .question {
+  color: var(--color-accent-sky);
+}
+
+.toggleBtn {
+  color: var(--color-text-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+.faqRow.open .chevron {
+  transform: rotate(180deg);
+  color: var(--color-accent-sky);
+}
+
+.faqBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.faqRow.open .faqBody {
+  max-height: 250px;
+  margin-top: 14px;
+}
+
+.answer {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .faqRow {
+    padding: 20px 24px;
+  }
+
+  .question {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .faqRow {
+    padding: 16px;
+  }
+
+  .question {
+    font-size: 0.95rem;
+  }
+
+  .answer {
+    font-size: 0.88rem;
+  }
+}
