@@ -14,7 +14,7 @@ export default function Footer() {
           <div className={styles.infoCol}>
             <Link href="/" className={styles.logo}>
               <Image
-                src="/swift_solar_logo_new.png"
+                src="/swift_solar_logo_idle.png"
                 alt="Swift Solar"
                 width={140}
                 height={48}
