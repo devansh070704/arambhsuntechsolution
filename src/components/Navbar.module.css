@@ -5,12 +5,12 @@
   width: 100%;
   z-index: 1000;
   transition: var(--transition-smooth);
-  padding: 14px 0;
+  padding: 6px 0;
   background-color: transparent;
 }
 
 .scrolled {
-  padding: 12px 0;
+  padding: 4px 0;
   background-color: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -33,11 +33,16 @@
 }
 
 .logoImage {
-  height: 40px;
+  height: 92px;
   width: auto;
   object-fit: contain;
   display: block;
   border-radius: var(--border-radius-sm);
+  transition: var(--transition-smooth);
+}
+
+.scrolled .logoImage {
+  height: 76px;
 }
 
 .links {
@@ -159,6 +164,14 @@
 }
 
 @media (max-width: 768px) {
+  .logoImage {
+    height: 68px;
+  }
+
+  .scrolled .logoImage {
+    height: 58px;
+  }
+
   .links {
     display: none;
   }
@@ -171,5 +184,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* Optimization for narrow foldables like Samsung Galaxy Z Fold 5 Folded (<= 360px) */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .logoImage {
+    height: 56px;
+  }
+
+  .scrolled .logoImage {
+    height: 48px;
+  }
+
+  .mobileDropdown {
+    padding: 10px 16px 16px 16px;
+  }
+
+  .mobileNavItem {
+    font-size: 0.95rem;
+    padding: 10px 12px;
   }
 }

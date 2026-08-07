@@ -76,6 +76,7 @@
   font-size: 0.85rem;
   font-weight: 600;
   width: max-content;
+  max-width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   letter-spacing: 0.5px;
 }
@@ -86,6 +87,7 @@
   background-color: var(--color-accent-sky);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--color-accent-sky);
+  flex-shrink: 0;
 }
 
 .title {
@@ -483,7 +485,7 @@
   box-shadow: 0 4px 20px rgba(220, 39, 67, 0.4);
 }
 
-/* Responsiveness */
+/* Responsiveness for Tablets, Foldables (Samsung Z Fold 5 Unfolded) & Desktops */
 @media (max-width: 1024px) {
   .twoColumnGrid {
     grid-template-columns: 1fr;
@@ -561,7 +563,7 @@
   }
 }
 
-/* Specific optimization for iPhone SE and small screens (<= 480px) */
+/* Specific optimization for small phone screens & Samsung Z Fold 5 Folded (<= 480px and <= 360px) */
 @media (max-width: 480px) {
   .heroSection {
     padding-top: 90px;
@@ -580,6 +582,9 @@
   .tagline {
     font-size: 0.75rem;
     padding: 6px 12px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
   }
 
   .title {
@@ -639,5 +644,47 @@
 
   .partnerLogo {
     font-size: 0.85rem;
+  }
+}
+
+/* Extra optimization for narrow viewports like Samsung Galaxy Z Fold 5 Folded (<= 360px) */
+@media (max-width: 360px) {
+  .heroSection {
+    padding-top: 84px;
+  }
+
+  .tagline {
+    font-size: 0.7rem;
+    padding: 5px 10px;
+  }
+
+  .title {
+    font-size: 1.85rem;
+    letter-spacing: -0.5px;
+  }
+
+  .subtitle {
+    font-size: 0.88rem;
+  }
+
+  .formGlassCard {
+    padding: 16px 12px;
+  }
+
+  .formTitle {
+    font-size: 1.15rem;
+  }
+
+  .instagramTitle {
+    font-size: 0.88rem;
+  }
+
+  .instagramHandle {
+    font-size: 0.75rem;
+  }
+
+  .instagramBtn {
+    font-size: 0.82rem;
+    padding: 8px 14px;
   }
 }

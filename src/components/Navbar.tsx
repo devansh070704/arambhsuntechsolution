@@ -36,8 +36,8 @@ export default function Navbar() {
           <Image
             src={logoSrc}
             alt="Swift Solar"
-            width={140}
-            height={48}
+            width={320}
+            height={110}
             className={styles.logoImage}
             priority
           />

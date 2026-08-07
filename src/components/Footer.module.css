@@ -272,3 +272,24 @@
     display: none; /* Hide very large typography on small screens */
   }
 }
+
+/* Optimization for narrow foldables like Samsung Galaxy Z Fold 5 Folded (<= 360px) */
+@media (max-width: 360px) {
+  .container {
+    padding: 0 14px;
+  }
+
+  .quoteCtaBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .motto {
+    font-size: 0.84rem;
+  }
+
+  .legalLinks {
+    justify-content: center;
+    width: 100%;
+  }
+}

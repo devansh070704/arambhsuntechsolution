@@ -180,3 +180,23 @@
     font-weight: 600;
   }
 }
+
+/* Optimization for narrow screen viewports like Samsung Galaxy Z Fold 5 Folded (<= 360px) */
+@media (max-width: 360px) {
+  .statsRow {
+    gap: 6px;
+  }
+
+  .statItem {
+    padding: 10px 4px;
+  }
+
+  .statVal {
+    font-size: 1.25rem;
+  }
+
+  .statLabel {
+    font-size: 0.62rem;
+    line-height: 1.2;
+  }
+}
