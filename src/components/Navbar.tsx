@@ -32,7 +32,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo} onClick={() => setIsMobileMenuOpen(false)}>
           <Image
-            src="/swift_solar_logo.png"
+            src="/swift_solar_logo_new.png"
             alt="Swift Solar"
             width={140}
             height={48}

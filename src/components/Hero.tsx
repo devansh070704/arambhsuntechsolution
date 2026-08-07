@@ -187,6 +187,34 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
+      {/* Horizontal Instagram Banner Strip */}
+      <div className={styles.instagramStrip}>
+        <div className={styles.instagramContainer}>
+          <div className={styles.instagramLeft}>
+            <div className={styles.instagramIconBadge}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+              </svg>
+            </div>
+            <div className={styles.instagramText}>
+              <span className={styles.instagramTitle}>Follow Swift Solar on Instagram</span>
+              <span className={styles.instagramHandle}>@swiftsolar.co.in • See live rooftop installations, project videos &amp; clean energy tips</span>
+            </div>
+          </div>
+          <a
+            href="https://www.instagram.com/swiftsolar.co.in?utm_source=qr&igsh=Y3p6bDF6bHUyYjhk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.instagramBtn}
+          >
+            <span>Follow @swiftsolar.co.in</span>
+            <ArrowRight size={16} />
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

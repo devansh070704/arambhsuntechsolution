@@ -138,12 +138,43 @@ export default function ContactPage() {
                     justifyContent: 'center',
                     flexShrink: 0
                   }}>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                      <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-primary)' }}>Instagram Profile</h3>
+                    <a
+                      href="https://www.instagram.com/swiftsolar.co.in?utm_source=qr&igsh=Y3p6bDF6bHUyYjhk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: '0.95rem', color: 'var(--color-accent-sky)', fontWeight: 600 }}
+                    >
+                      @swiftsolar.co.in
+                    </a>
+                  </div>
+                </div>
+
+                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
+                  <div style={{
+                    width: '44px',
+                    height: '44px',
+                    backgroundColor: 'var(--color-bg-accent)',
+                    color: 'var(--color-accent-sky)',
+                    borderRadius: '12px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    flexShrink: 0
+                  }}>
                     <MapPin size={20} />
                   </div>
                   <div>
                     <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--color-primary)' }}>Location</h3>
                     <p style={{ fontSize: '0.9rem', color: 'var(--color-text-light)' }}>
-                      Swift Solar, Amravati, Maharashtra, India
+                      SH242, Gadge Nagar, Amravati, Maharashtra, India
                     </p>
                   </div>
                 </div>
@@ -257,6 +288,47 @@ export default function ContactPage() {
                 </form>
               )}
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Google Maps Location Embed Section */}
+      <section style={{ backgroundColor: 'var(--color-bg-light)', padding: '60px 0' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+            <span style={{
+              fontSize: '0.8rem',
+              textTransform: 'uppercase',
+              color: 'var(--color-accent-sky)',
+              fontWeight: 700,
+              letterSpacing: '2px',
+              display: 'block',
+              marginBottom: '8px'
+            }}>
+              Location & Map
+            </span>
+            <h2 className="section-responsive-title">Find Us On Google Maps</h2>
+            <p style={{ color: 'var(--color-text-light)', fontSize: '0.95rem', marginTop: '6px' }}>
+              Gadge Nagar, Amravati, Maharashtra
+            </p>
+          </div>
+          <div style={{
+            width: '100%',
+            height: '420px',
+            borderRadius: 'var(--border-radius-lg)',
+            overflow: 'hidden',
+            boxShadow: 'var(--shadow-md)',
+            border: '1px solid rgba(10, 28, 62, 0.08)'
+          }}>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.1034410370908!2d77.7640144!3d20.948360700000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd6a33679a3396b%3A0x2ab8b0262af04e1e!2sSH242%2C%20Gadge%20Nagar%2C%20Amravati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1786083531145!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="strict-origin-when-cross-origin"
+            />
           </div>
         </div>
       </section>

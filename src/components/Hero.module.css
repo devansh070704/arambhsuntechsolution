@@ -403,6 +403,86 @@
   color: inherit;
 }
 
+/* Horizontal Instagram Banner Strip */
+.instagramStrip {
+  background: linear-gradient(90deg, #0A1C3E 0%, #1E1B4B 50%, #0A1C3E 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 16px 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.instagramContainer {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.instagramLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.instagramIconBadge {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.instagramText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.instagramTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.2px;
+}
+
+.instagramHandle {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+}
+
+.instagramBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: var(--border-radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: var(--transition-smooth);
+  white-space: nowrap;
+}
+
+.instagramBtn:hover {
+  background: linear-gradient(45deg, #F09433 0%, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888 100%);
+  border-color: transparent;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(220, 39, 67, 0.4);
+}
+
 /* Responsiveness */
 @media (max-width: 1024px) {
   .twoColumnGrid {
@@ -462,6 +542,22 @@
   .logosRow {
     justify-content: center;
     gap: 24px;
+  }
+
+  .instagramContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+  }
+
+  .instagramLeft {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .instagramBtn {
+    width: 100%;
+    justify-content: center;
   }
 }
 

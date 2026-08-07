@@ -6,8 +6,8 @@ import Link from 'next/link';
 import { ScrollReveal } from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Our Services | Swift Solar Amravati',
-  description: 'Swift Solar provides Solar Panel Installation, Solar Panel Maintenance, Solar Panel Repair, and Solar Panel Cleaning services across Amravati.',
+  title: 'Solar Panel Services in Amravati | Installation, Repair & Cleaning',
+  description: 'Professional solar panel installation, routine cleaning, preventive maintenance & inverter repair services across Amravati & Maharashtra. Get high-yield Monocrystalline & Hybrid solar power.',
 };
 
 export default function ServicesPage() {

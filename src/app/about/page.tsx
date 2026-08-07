@@ -4,8 +4,8 @@ import CTA from '@/components/CTA';
 import { CheckCircle2, Zap } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Swift Solar Amravati',
-  description: 'Learn about Swift Solar, established in 2023 in Amravati, Maharashtra. We deliver high-efficiency Monocrystalline, Polycrystalline, and Hybrid solar solutions.',
+  title: 'About Us | Trusted Solar Panel Installers in Amravati',
+  description: 'Learn about Swift Solar, Amravati\'s premier solar installation contractor established in 2023. Custom Monocrystalline & Hybrid solar energy solutions with 25+ years performance lifespan across Maharashtra.',
 };
 
 export default function AboutPage() {
