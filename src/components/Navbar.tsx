@@ -24,7 +24,9 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navbarClass = `${styles.navbar} ${isScrolled || !isHome || isMobileMenuOpen ? styles.scrolled : ''}`;
+  const isScrolledOrActive = isScrolled || !isHome || isMobileMenuOpen;
+  const navbarClass = `${styles.navbar} ${isScrolledOrActive ? styles.scrolled : ''}`;
+  const logoSrc = isScrolledOrActive ? "/swift_solar_logo_scrolled.png" : "/swift_solar_logo_idle.png";
 
   return (
     <nav className={navbarClass}>
@@ -32,7 +34,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className={styles.logo} onClick={() => setIsMobileMenuOpen(false)}>
           <Image
-            src="/swift_solar_logo_new.png"
+            src={logoSrc}
             alt="Swift Solar"
             width={140}
             height={48}
