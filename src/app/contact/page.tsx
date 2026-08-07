@@ -4,6 +4,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Phone, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import styles from '@/components/Hero.module.css';
+import { sendLeadToAppsScript } from '@/lib/sendLead';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -14,14 +15,21 @@ export default function ContactPage() {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    await sendLeadToAppsScript({
+      ...formData,
+      formSource: 'Contact Us Page Form'
+    });
+    setIsSubmitting(false);
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', phone: '', email: '', serviceRequested: 'installation', message: '' });
-    }, 4000);
+    }, 5000);
   };
 
   return (
@@ -281,8 +289,8 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <button type="submit" className={styles.submitButton}>
-                    Submit Request
+                  <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending Request...' : 'Submit Request'}
                     <Send size={16} style={{ marginLeft: 8 }} />
                   </button>
                 </form>

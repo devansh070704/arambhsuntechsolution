@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from './Hero.module.css';
 import { ArrowRight, Star, ShieldCheck, Sun, Zap, Award, Sparkles, Send } from 'lucide-react';
 import Link from 'next/link';
+import { sendLeadToAppsScript } from '@/lib/sendLead';
 
 export default function Hero() {
   const [formData, setFormData] = useState({
@@ -12,14 +13,21 @@ export default function Hero() {
     systemType: 'solar'
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    await sendLeadToAppsScript({
+      ...formData,
+      formSource: 'Homepage Hero Consultation Form'
+    });
+    setIsSubmitting(false);
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', phone: '', city: '', systemType: 'solar' });
-    }, 4000);
+    }, 5000);
   };
 
   return (
@@ -148,8 +156,8 @@ export default function Hero() {
                     </select>
                   </div>
 
-                  <button type="submit" className={styles.submitButton}>
-                    Get Free Consultation
+                  <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
+                    {isSubmitting ? 'Sending Request...' : 'Get Free Consultation'}
                     <Send size={16} style={{ marginLeft: 8 }} />
                   </button>
                 </form>
