@@ -37,7 +37,7 @@ export default function Workflow() {
         <ScrollReveal direction="up" delay={0}>
           <div className={styles.header}>
             <span className={styles.preTitle}>Our Simple Process</span>
-            <h2 className={styles.title}>How Swift Solar Works: Survey To Savings</h2>
+            <h2 className={styles.title}>How Aarambh Suntech Works: Survey To Savings</h2>
             <p className={styles.subtitle}>
               A transparent, smooth journey from your first inquiry to having a live solar system on your rooftop.
             </p>

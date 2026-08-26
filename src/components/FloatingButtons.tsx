@@ -19,8 +19,8 @@ export function FloatingButtons() {
     <>
       {/* Quick Call floating button - Bottom Left */}
       <a
-        href="tel:+918149217116"
-        aria-label="Call Swift Solar"
+        href="tel:+918850050126"
+        aria-label="Call Aarambh Suntech Solution"
         style={{
           position: 'fixed',
           bottom: isSmallScreen ? '14px' : '24px',
@@ -33,7 +33,7 @@ export function FloatingButtons() {
           color: 'white',
           padding: isSmallScreen ? '10px 14px' : '12px 20px',
           borderRadius: '9999px',
-          boxShadow: '0 8px 32px rgba(10, 28, 62, 0.3)',
+          boxShadow: '0 8px 32px rgba(12, 27, 38, 0.3)',
           fontWeight: '600',
           fontSize: isSmallScreen ? '0.8rem' : '0.9rem',
           textDecoration: 'none',
@@ -42,12 +42,12 @@ export function FloatingButtons() {
         onMouseEnter={(e) => {
           (e.currentTarget as HTMLElement).style.backgroundColor = 'var(--color-accent-sky)';
           (e.currentTarget as HTMLElement).style.transform = 'translateY(-2px)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(0, 180, 216, 0.4)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(212, 155, 39, 0.4)';
         }}
         onMouseLeave={(e) => {
           (e.currentTarget as HTMLElement).style.backgroundColor = 'var(--color-primary)';
           (e.currentTarget as HTMLElement).style.transform = 'translateY(0)';
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(10, 28, 62, 0.3)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 8px 32px rgba(12, 27, 38, 0.3)';
         }}
       >
         <Phone style={{ width: isSmallScreen ? '16px' : '18px', height: isSmallScreen ? '16px' : '18px' }} />
@@ -56,7 +56,7 @@ export function FloatingButtons() {
 
       {/* WhatsApp Chat floating button - Bottom Right */}
       <a
-        href="https://wa.me/918149217116?text=Hi%20Swift%20Solar%2C%20I%20am%20interested%20in%20a%20solar%20rooftop%20installation."
+        href="https://wa.me/918850050126?text=Hi%20Aarambh%20Suntech%20Solution%2C%20I%20am%20interested%20in%20Solar%2C%20CCTV%20or%20Electrical%20Services."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"

@@ -1,63 +1,63 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CTA from '@/components/CTA';
-import { Sun, Wrench, ShieldCheck, Sparkles, ArrowRight } from 'lucide-react';
+import { Sun, Video, Zap, Wrench, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import { ScrollReveal } from '@/components/ScrollReveal';
 
 export const metadata = {
-  title: 'Solar Panel Services in Amravati | Installation, Repair & Cleaning',
-  description: 'Professional solar panel installation, routine cleaning, preventive maintenance & inverter repair services across Amravati & Maharashtra. Get high-yield Monocrystalline & Hybrid solar power.',
+  title: 'Solar Panel Installation in Pune | CCTV & Electrical Services | Aarambh Suntech Solution',
+  description: 'On-grid & off-grid solar installation for homes and businesses in Pune. CCTV camera setup for home & shop. Electrical contractor services. Government subsidy assistance. Get a free quote.',
 };
 
 export default function ServicesPage() {
   const services = [
     {
-      title: 'Solar Panel Installation',
+      title: '☀️ Solar Panel Installation in Pune',
       icon: Sun,
       image: '/images/hero_solar.jpg',
-      desc: 'Precision design and turnkey installation of Monocrystalline, Polycrystalline, On-Grid, and Hybrid solar energy systems for residential homes, shops, and commercial facilities.',
+      desc: 'On-grid and off-grid rooftop solar panel installation for homes, shops, commercial complexes, factories and housing societies across Pune & Maharashtra. We handle everything — site survey, system design, installation, MSEDCL net metering, and PM Surya Ghar government subsidy application. Solar panel installation cost in Pune starts at ₹60,000 after subsidy for a 1kW system.',
       highlights: [
-        'Custom 3D Rooftop Layout & Structural Audit',
-        'Monocrystalline & Polycrystalline Options',
-        'Hybrid & Battery Storage Integrations',
-        'Complete Safety Wiring & Inverter Setup'
+        'On-Grid & Off-Grid Solar System — Homes, Shops & Factories',
+        'PM Surya Ghar Yojana Subsidy Assistance (up to ₹78,000)',
+        'MSEDCL Net Metering Registration & Connection Support',
+        'Solar Panel Repair, Cleaning & AMC Service Available',
       ]
     },
     {
-      title: 'Solar Panel Maintenance',
-      icon: ShieldCheck,
+      title: '📹 CCTV Camera Installation in Pune',
+      icon: Video,
       image: '/images/features_central.jpg',
-      desc: 'Preventative system health checkups and diagnostic audits designed to keep your solar panels operating at peak conversion rates year-round.',
+      desc: 'Wired and wireless CCTV camera installation for homes, shops, offices, warehouses, and factories in Pune & Khed. We install Hikvision, CP Plus, and Dahua HD/IP camera systems with night-vision, DVR/NVR storage, and remote mobile live viewing. Same-week installation. CCTV AMC service available.',
       highlights: [
-        'Routine Voltage & Current Diagnostics',
-        'Inverter & Electrical Wiring Inspections',
-        'Thermal Hotspot & Degradation Checks',
-        'Annual Maintenance Contracts (AMC)'
+        'Home CCTV Camera & Shop Security Camera Setup',
+        'Wireless & Wired HD/IP Network Camera Installation',
+        'Night-Vision & Full-Color 24/7 Surveillance',
+        'CCTV AMC Service & DVR/NVR Repair Pune',
       ]
     },
     {
-      title: 'Solar Panel Repair',
-      icon: Wrench,
+      title: '⚡ Electrical Contractor in Pune',
+      icon: Zap,
       image: '/images/solar_engineer.jpg',
-      desc: 'Prompt repair services for malfunctioning inverters, damaged panels, loose wiring, tripped breakers, and degraded connection junction boxes.',
+      desc: 'Licensed electrical contractor for residential home wiring, commercial electrical panel installation, and industrial electrical contracting across Khed, Chakan & Pune. We handle complete wiring, DB panel setup, three-phase industrial connections, safety earthing, and electrical maintenance contracts.',
       highlights: [
-        'Fast On-Site Fault Diagnostics',
-        'Inverter Replacement & Calibration',
-        'Junction Box & Wiring Repairs',
-        'Structural Frame Realignment'
+        'Home Wiring & Residential Electrical Work',
+        'Commercial Electrical Panel Installation',
+        'Industrial Electrical Contractor — Khed, Chakan & Pune',
+        'Electrical Short-Circuit Repair & Safety Inspection',
       ]
     },
     {
-      title: 'Solar Panel Cleaning',
-      icon: Sparkles,
+      title: '🛠️ Solar & CCTV AMC & Repair Services',
+      icon: Wrench,
       image: '/images/solar_commercial.jpg',
-      desc: 'Professional cleaning services using soft demineralized water and specialized brushes to remove dust, soot, and bird droppings, restoring up to 30% lost efficiency.',
+      desc: 'Solar panel not generating power? CCTV camera not working? We provide solar panel repair, solar inverter repair, solar panel cleaning, CCTV DVR troubleshooting, and electrical maintenance services in Pune. Annual maintenance contracts (AMC) available for solar, CCTV, and electrical systems.',
       highlights: [
-        'Demineralized Water Washing',
-        'Non-Abrasive Soft Surface Brushing',
-        'Removal of Heavy Dust & Bird Droppings',
-        'Scheduled Cleaning Plans Available'
+        'Solar Panel Repair & Solar Inverter Repair Pune',
+        'Solar Panel Cleaning & Output Optimization',
+        'CCTV Camera & DVR/NVR Fault Repair',
+        'Annual Maintenance Contracts (AMC) — Solar, CCTV, Electrical',
       ]
     }
   ];
@@ -85,13 +85,13 @@ export default function ServicesPage() {
               display: 'block',
               marginBottom: '10px'
             }}>
-              Full Lifecycle Care
+              Complete Technical Execution
             </span>
             <h1 className="page-header-title">
-              Our Solar Services
+              Our Professional Services
             </h1>
             <p style={{ maxWidth: '650px', margin: '0 auto', fontSize: '1rem', color: 'rgba(255, 255, 255, 0.8)', lineHeight: 1.6 }}>
-              From precision installation to routine cleaning, repair, and ongoing maintenance — we keep your solar investment performing at its best.
+              From Rooftop Solar Power to HD CCTV Security and Turnkey Electrical Works — Aarambh Suntech Solution is your trusted engineering partner in Shiroli, Khed, Pune.
             </p>
           </ScrollReveal>
         </div>
@@ -103,7 +103,7 @@ export default function ServicesPage() {
           <div style={{ display: 'flex', flexDirection: 'column', gap: '80px' }}>
             {services.map((srv, idx) => {
               const IconComp = srv.icon;
-              const isEven = idx % 2 === 0; // Even indices: Text Left, Image Right | Odd indices: Image Left, Text Right
+              const isEven = idx % 2 === 0;
 
               return (
                 <ScrollReveal key={idx} direction="up" delay={100}>
@@ -114,14 +114,14 @@ export default function ServicesPage() {
                         width: '48px',
                         height: '48px',
                         backgroundColor: 'var(--color-bg-accent)',
-                        color: 'var(--color-accent-sky)',
+                        color: 'var(--color-primary)',
                         borderRadius: '14px',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         marginBottom: '16px'
                       }}>
-                        <IconComp size={24} />
+                        <IconComp size={24} color="#D49B27" />
                       </div>
                       <h2 className="section-responsive-title" style={{ marginBottom: '14px' }}>
                         {srv.title}
@@ -150,7 +150,7 @@ export default function ServicesPage() {
                         fontWeight: 700,
                         fontSize: '0.9rem'
                       }}>
-                        Book Service <ArrowRight size={16} />
+                        Request Quotation <ArrowRight size={16} />
                       </Link>
                     </div>
 

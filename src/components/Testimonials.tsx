@@ -8,20 +8,20 @@ export default function Testimonials() {
   const reviews = [
     {
       name: 'Rajesh Kulkarni',
-      role: 'Homeowner, Amravati',
-      quote: 'Swift Solar installed a 5kW system on my home. My electricity bill dropped significantly! The team was professional and the installation was done in a single day.',
+      role: 'Homeowner, Shiroli (Khed)',
+      quote: 'Aarambh Suntech Solution installed a 5kW solar rooftop system at my bungalow. My electricity bill dropped from ₹3,200 to under ₹200! Anil & Vaibhav handled the MSEDCL net metering and subsidy smoothly.',
       rating: 5,
     },
     {
       name: 'Priya Deshmukh',
-      role: 'Restaurant Owner, Amravati',
-      quote: 'Excellent service from start to finish. They handled all the technical setup and cleaning. Our commercial energy bills have reduced drastically. Highly recommended!',
+      role: 'Shop Owner, Chakan',
+      quote: 'Excellent CCTV camera installation! They installed 4 HD cameras with full night vision at my shop in Chakan. Mobile phone live viewing works seamlessly. Very reliable local team.',
       rating: 5,
     },
     {
       name: 'Suresh Khadse',
-      role: 'Property Owner, Vidarbha',
-      quote: 'The solar maintenance and cleaning service has kept our solar output at maximum efficiency. Swift Solar took care of everything professionally.',
+      role: 'Factory Manager, Khed Industrial Area',
+      quote: 'Complete electrical panel wiring and maintenance done for our manufacturing unit. Prompt service, professional technical execution, and fair pricing. Highly recommended!',
       rating: 5,
     }
   ];
@@ -32,9 +32,9 @@ export default function Testimonials() {
         <ScrollReveal direction="up" delay={0}>
           <div className={styles.header}>
             <span className={styles.preTitle}>Customer Reviews</span>
-            <h2 className={styles.title}>Real Savings. Real People. Real Results.</h2>
+            <h2 className={styles.title}>Real Savings. Real Security. Real Results.</h2>
             <p className={styles.subtitle}>
-              Hear from our customers across Amravati &amp; Vidarbha who are enjoying clean, reliable solar energy.
+              Hear from our customers across Shiroli, Khed, Chakan &amp; Pune who trust Aarambh Suntech Solution.
             </p>
           </div>
         </ScrollReveal>

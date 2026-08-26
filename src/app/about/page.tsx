@@ -1,11 +1,11 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CTA from '@/components/CTA';
-import { CheckCircle2, Zap } from 'lucide-react';
+import { CheckCircle2, Sun, Video, Zap } from 'lucide-react';
 
 export const metadata = {
-  title: 'About Us | Trusted Solar Panel Installers in Amravati',
-  description: 'Learn about Swift Solar, Amravati\'s premier solar installation contractor established in 2023. Custom Monocrystalline & Hybrid solar energy solutions with 25+ years performance lifespan across Maharashtra.',
+  title: 'About Us | Solar & CCTV Company in Pune | Aarambh Suntech Solution',
+  description: 'Aarambh Suntech Solution is a GST registered solar, CCTV & electrical company in Pune. Led by Anil Korede & Vaibhav Dhanwat — specialists in rooftop solar installation, CCTV camera setup, and electrical contracting across Khed & Pune.',
 };
 
 export default function AboutPage() {
@@ -32,13 +32,13 @@ export default function AboutPage() {
             display: 'block',
             marginBottom: '10px'
           }}>
-            Est. 2023 • Amravati, Maharashtra
+            Sawant Complex • Shiroli, Khed, Pune
           </span>
           <h1 className="page-header-title">
-            About Swift Solar
+            Solar, CCTV & Electrical Company in Pune
           </h1>
           <p style={{ maxWidth: '650px', margin: '0 auto', fontSize: '1rem', color: 'rgba(255, 255, 255, 0.8)', lineHeight: 1.6 }}>
-            Empowering homeowners and business owners with clean, efficient solar energy systems engineered for longevity and performance.
+            Rooftop solar panel installation, CCTV camera setup, and electrical contracting — all under one roof. Serving Khed, Chakan & Pune.
           </p>
         </div>
       </section>
@@ -57,24 +57,25 @@ export default function AboutPage() {
                 display: 'block',
                 marginBottom: '10px'
               }}>
-                Our Mission &amp; Expertise
+                Who We Are
               </span>
               <h2 className="section-responsive-title" style={{ lineHeight: 1.25, marginBottom: '18px' }}>
-                Engineering Independent Power Since 2023
+                Anil Korede &amp; Vaibhav Dhanwat — Solar, CCTV &amp; Electrical Specialists
               </h2>
               <p style={{ color: 'var(--color-text-light)', fontSize: '0.98rem', lineHeight: 1.65, marginBottom: '14px' }}>
-                Founded in 2023 in Amravati, Maharashtra, <strong>Swift Solar</strong> was established to provide simple, reliable, and premium solar energy solutions. We specialize in designing, installing, and servicing state-of-the-art solar photovoltaic systems for residential, commercial, and industrial clients.
+                <strong>Aarambh Suntech Solution</strong> is a GST registered technical services company headquartered at Sawant Complex, Shiroli, Khed, Pune. We are one of the very few companies in Pune that offers solar panel installation, CCTV camera setup, and electrical contracting together — so you don&apos;t need three different vendors.
               </p>
               <p style={{ color: 'var(--color-text-light)', fontSize: '0.98rem', lineHeight: 1.65, marginBottom: '22px' }}>
-                Our team handles everything from initial roof site surveys to installation of Monocrystalline, Polycrystalline, and Hybrid systems, plus ongoing maintenance, repair, and cleaning services.
+                Led by <strong>Anil Korede</strong> and <strong>Vaibhav Dhanwat</strong>, our team brings hands-on field expertise in solar rooftop systems, HD/IP CCTV surveillance, and industrial &amp; residential electrical works. We use only proven brands — Hikvision, CP Plus, and MNRE-approved solar equipment — with full transparency in pricing and no hidden costs.
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
                 {[
-                  'Tier-1 Monocrystalline & Polycrystalline Modules',
-                  'High-Efficiency Hybrid & On-Grid System Designs',
-                  'Complete Post-Installation Cleaning & Maintenance',
-                  'Dedicated Local Engineering Support in Amravati'
+                  'GST Registered Business (GSTIN: 27BXDPK0771P1Z1)',
+                  'PM Surya Ghar Govt Scheme — Solar Subsidy up to ₹78,000',
+                  'Hikvision & CP Plus Authorized CCTV Installation',
+                  '100% Transparent Pricing — Free Site Visit & Quotation',
+                  'Serving Khed, Shiroli, Chakan, Rajgurunagar & Pune'
                 ].map((item, idx) => (
                   <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                     <CheckCircle2 size={18} color="var(--color-accent-sky)" style={{ flexShrink: 0 }} />
@@ -87,7 +88,7 @@ export default function AboutPage() {
             <div style={{ position: 'relative', borderRadius: 'var(--border-radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
               <img
                 src="/images/solar_engineer.jpg"
-                alt="Swift Solar Engineer At Work"
+                alt="Aarambh Suntech Solution Solar CCTV Electrical Specialists Pune"
                 style={{ width: '100%', height: 'auto', maxHeight: '420px', objectFit: 'cover', display: 'block' }}
               />
             </div>
@@ -95,49 +96,47 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Types of Solar Systems Section */}
+      {/* 3 Pillars Section */}
       <section className="section-padding" style={{ backgroundColor: 'var(--color-bg-light)' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 40px auto' }}>
             <span style={{ fontSize: '0.8rem', textTransform: 'uppercase', color: 'var(--color-accent-sky)', fontWeight: 700, letterSpacing: '2px' }}>
-              System Technology
+              Core Technical Offerings
             </span>
             <h2 className="section-responsive-title" style={{ marginTop: '8px' }}>
-              Solar Panel Types We Install
+              Our 3 Specialized Service Pillars
             </h2>
           </div>
 
-          <div className="grid-responsive-4">
+          <div className="grid-responsive-3">
             {[
-              { title: 'Solar (On-Grid)', desc: 'Direct grid-tied systems that synchronize with your local utility for immediate bill reduction.' },
-              { title: 'Hybrid Systems', desc: 'Combines grid synchronization with battery storage for uninterrupted power during outages.' },
-              { title: 'Monocrystalline', desc: 'Premium black silicon panels offering peak conversion efficiency and sleek visual aesthetics.' },
-              { title: 'Polycrystalline', desc: 'Cost-effective blue silicon panels engineered for durability and reliable daily output.' }
+              { title: '☀️ Solar Solutions', icon: <Sun size={24} color="#D49B27" />, desc: 'On-grid, hybrid, and monocrystalline solar rooftop installations engineered for maximum electricity generation and bill reduction.' },
+              { title: '📹 CCTV Security', icon: <Video size={24} color="#D49B27" />, desc: 'High-definition night-vision cameras, IP network surveillance, DVR/NVR setup, and remote mobile phone live viewing.' },
+              { title: '⚡ Electrical Works', icon: <Zap size={24} color="#D49B27" />, desc: 'Complete electrical wiring, main distribution panel installation, commercial lighting, maintenance, and technical repairs.' }
             ].map((type, idx) => (
               <div key={idx} className="hover-lift" style={{
                 backgroundColor: 'white',
-                padding: '24px 20px',
+                padding: '28px 24px',
                 borderRadius: 'var(--border-radius-md)',
-                border: '1px solid rgba(10, 28, 62, 0.06)',
+                border: '1px solid rgba(12, 27, 38, 0.08)',
                 boxShadow: 'var(--shadow-sm)'
               }}>
                 <div style={{
-                  width: '44px',
-                  height: '44px',
+                  width: '48px',
+                  height: '48px',
                   backgroundColor: 'var(--color-bg-accent)',
-                  color: 'var(--color-accent-sky)',
                   borderRadius: '12px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
                   marginBottom: '16px'
                 }}>
-                  <Zap size={22} />
+                  {type.icon}
                 </div>
-                <h3 style={{ fontSize: '1.1rem', fontWeight: 700, color: 'var(--color-primary)', marginBottom: '8px' }}>
+                <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--color-primary)', marginBottom: '8px' }}>
                   {type.title}
                 </h3>
-                <p style={{ fontSize: '0.88rem', color: 'var(--color-text-light)', lineHeight: 1.55 }}>
+                <p style={{ fontSize: '0.9rem', color: 'var(--color-text-light)', lineHeight: 1.6 }}>
                   {type.desc}
                 </p>
               </div>

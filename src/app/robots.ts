@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://swiftsolar.in/sitemap.xml',
+    sitemap: 'https://aarambhsuntech.in/sitemap.xml',
   };
 }

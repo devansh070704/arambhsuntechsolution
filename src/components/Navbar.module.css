@@ -5,17 +5,17 @@
   width: 100%;
   z-index: 1000;
   transition: var(--transition-smooth);
-  padding: 6px 0;
+  padding: 12px 0;
   background-color: transparent;
 }
 
 .scrolled {
-  padding: 4px 0;
-  background-color: rgba(255, 255, 255, 0.96);
+  padding: 8px 0;
+  background-color: rgba(255, 255, 255, 0.97);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  box-shadow: 0 4px 20px rgba(10, 28, 62, 0.05);
-  border-bottom: 1px solid rgba(10, 28, 62, 0.06);
+  box-shadow: 0 4px 20px rgba(12, 27, 38, 0.08);
+  border-bottom: 1px solid rgba(12, 27, 38, 0.08);
 }
 
 .container {
@@ -27,23 +27,56 @@
   justify-content: space-between;
 }
 
-.logo {
+.logoBadge {
   display: flex;
   align-items: center;
-  margin-left: -24px;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  transition: var(--transition-smooth);
+}
+
+.logoBadge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
 .logoImage {
-  height: 92px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   display: block;
-  border-radius: var(--border-radius-sm);
   transition: var(--transition-smooth);
 }
 
 .scrolled .logoImage {
-  height: 76px;
+  height: 40px;
+}
+
+.logoTextGroup {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brandTitle {
+  font-size: 1.22rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #0C1B26;
+  transition: var(--transition-smooth);
+}
+
+.brandSub {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #D49B27;
+  text-transform: uppercase;
 }
 
 .links {
@@ -91,18 +124,35 @@
 }
 
 .ctaButton {
-  background-color: var(--color-primary);
-  color: white;
-  padding: 9px 22px;
+  background-color: var(--color-accent-sky);
+  color: #0C1B26;
+  padding: 10px 22px;
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: var(--border-radius-full);
   box-shadow: var(--shadow-sm);
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.ctaTextShort {
+  display: none;
+}
+
+.ctaTextFull {
+  display: inline;
+}
+
+.phoneIcon {
+  flex-shrink: 0;
 }
 
 .ctaButton:hover {
-  background-color: var(--color-accent-sky);
+  background-color: white;
+  color: var(--color-primary);
   transform: translateY(-2px);
   box-shadow: var(--shadow-glow);
 }
@@ -110,23 +160,27 @@
 .menuButton {
   display: none;
   color: white;
-  padding: 4px;
+  padding: 6px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 .scrolled .menuButton {
   color: var(--color-primary);
 }
 
-/* Seamless Integrated Mobile Dropdown Panel */
+/* Mobile Dropdown Panel */
 .mobileDropdown {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(10, 28, 62, 0.08);
-  box-shadow: 0 12px 30px rgba(10, 28, 62, 0.08);
+  border-bottom: 1px solid rgba(12, 27, 38, 0.08);
+  box-shadow: 0 12px 30px rgba(12, 27, 38, 0.08);
   padding: 12px 24px 20px 24px;
-  margin-top: 12px;
+  margin-top: 8px;
   animation: slideDownFade 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -150,7 +204,60 @@
 
 .mobileNavItem:hover, .activeMobile {
   background-color: var(--color-bg-accent);
-  color: var(--color-accent-sky);
+  color: var(--color-primary);
+}
+
+.mobileContactDivider {
+  height: 1px;
+  background-color: rgba(12, 27, 38, 0.08);
+  margin: 10px 0 12px 0;
+}
+
+.mobileContactRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mobileCallBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 12px 18px;
+  border-radius: var(--border-radius-full);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(12, 27, 38, 0.2);
+  transition: var(--transition-smooth);
+}
+
+.mobileCallBtn:hover {
+  background-color: var(--color-accent-sky);
+  color: #0C1B26;
+}
+
+.mobileWhatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: var(--border-radius-full);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);
+  transition: var(--transition-smooth);
+}
+
+.mobileWhatsappBtn:hover {
+  background-color: #20bd5a;
 }
 
 @keyframes slideDownFade {
@@ -165,45 +272,112 @@
 }
 
 @media (max-width: 768px) {
-  .logoImage {
-    height: 68px;
+  .navbar {
+    padding: 8px 0;
+  }
+  
+  .container {
+    padding: 0 16px;
   }
 
-  .scrolled .logoImage {
-    height: 58px;
+  .logoBadge {
+    padding: 5px 10px;
+    gap: 8px;
+    border-radius: 10px;
+  }
+
+  .logoImage {
+    height: 34px;
+  }
+
+  .brandTitle {
+    font-size: 0.98rem;
+    letter-spacing: 0.8px;
+  }
+
+  .brandSub {
+    font-size: 0.54rem;
+    letter-spacing: 0.6px;
   }
 
   .links {
     display: none;
   }
 
+  .actions {
+    gap: 8px;
+  }
+
   .ctaButton {
-    display: none;
+    padding: 7px 14px;
+    font-size: 0.8rem;
   }
 
   .menuButton {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    width: 36px;
+    height: 36px;
+  }
+
+  .scrolled .menuButton {
+    background-color: var(--color-bg-accent);
+    border-color: rgba(12, 27, 38, 0.1);
+    color: var(--color-primary);
   }
 }
 
-/* Optimization for narrow foldables like Samsung Galaxy Z Fold 5 Folded (<= 360px) */
-@media (max-width: 360px) {
+/* Precise Optimization for iPhone SE (375px viewport width) & narrow screens */
+@media (max-width: 400px) {
   .container {
-    padding: 0 14px;
+    padding: 0 10px;
+  }
+
+  .logoBadge {
+    padding: 4px 8px;
+    gap: 6px;
+    border-radius: 8px;
   }
 
   .logoImage {
-    height: 56px;
+    height: 30px;
   }
 
-  .scrolled .logoImage {
-    height: 48px;
+  .brandTitle {
+    font-size: 0.86rem;
+    letter-spacing: 0.5px;
+  }
+
+  .brandSub {
+    font-size: 0.48rem;
+    letter-spacing: 0.4px;
+  }
+
+  .ctaTextFull {
+    display: none;
+  }
+
+  .ctaTextShort {
+    display: inline;
+  }
+
+  .ctaButton {
+    padding: 6px 10px;
+    font-size: 0.76rem;
+  }
+
+  .menuButton {
+    width: 34px;
+    height: 34px;
+    padding: 5px;
   }
 
   .mobileDropdown {
-    padding: 10px 16px 16px 16px;
+    padding: 10px 12px 16px 12px;
   }
 
   .mobileNavItem {

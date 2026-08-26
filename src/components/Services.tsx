@@ -45,7 +45,7 @@ export default function Services() {
               Professional Solar Services &amp; Maintenance
             </h2>
             <p className={styles.textDesc}>
-              Swift Solar provides complete lifecycle support for solar power systems — from precision installation of Monocrystalline and Hybrid modules to ongoing cleaning and maintenance.
+              Aarambh Suntech Solution provides complete lifecycle support — from precision installation of Solar, CCTV, and Electrical systems to ongoing maintenance and repairs.
             </p>
             <Link href="/contact" className={styles.btnLink}>
               Request Service <ArrowRight size={18} style={{ marginLeft: 8 }} />

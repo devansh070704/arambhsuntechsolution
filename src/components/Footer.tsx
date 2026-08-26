@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import styles from './Footer.module.css';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Phone, MapPin } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -12,30 +12,29 @@ export default function Footer() {
         <div className={styles.grid}>
           {/* Column 1: Logo & Motto */}
           <div className={styles.infoCol}>
-            <Link href="/" className={styles.logo}>
+            <Link href="/" className={styles.logoBadge}>
               <Image
-                src="/swift_solar_logo_idle.png"
-                alt="Swift Solar"
-                width={140}
-                height={48}
+                src="/aarambh_logo.png?v=3"
+                alt="Aarambh Suntech Solution"
+                width={52}
+                height={52}
                 className={styles.logoImage}
+                unoptimized
               />
+              <div className={styles.logoTextGroup}>
+                <span className={styles.brandTitle}>AARAMBH</span>
+                <span className={styles.brandSub}>SUNTECH SOLUTION</span>
+              </div>
             </Link>
             <p className={styles.motto}>
-              Established in 2023. Swift Solar provides turnkey solar panel installations, hybrid systems, maintenance, repair, and cleaning services across Amravati &amp; Maharashtra.
+              Aarambh Suntech Solution provides turnkey Rooftop Solar Panel Systems, HD &amp; IP CCTV Security Camera Setup, and Turnkey Industrial &amp; Residential Electrical Contracting across Shiroli, Khed, Chakan &amp; Pune.
             </p>
             <div className={styles.socialRow}>
-              <a href="https://facebook.com" className={styles.socialLink} aria-label="Facebook" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-              </a>
-              <a href="https://www.instagram.com/swiftsolar.co.in?utm_source=qr&igsh=Y3p6bDF6bHUyYjhk" className={styles.socialLink} aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              </a>
-              <a href="https://wa.me/918149217116" className={styles.socialLink} aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/918850050126" className={styles.socialLink} aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
               </a>
-              <a href="mailto:lokesh.nistane1@gmail.com" className={styles.socialLink} aria-label="Email">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="tel:+918850050126" className={styles.socialLink} aria-label="Call Anil Korede">
+                <Phone size={18} />
               </a>
             </div>
           </div>
@@ -51,30 +50,27 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Contact Info */}
+          {/* Column 3: Contact Info & Proprietors */}
           <div className={styles.linksCol}>
-            <h3 className={styles.colTitle}>Contact</h3>
+            <h3 className={styles.colTitle}>Contact Specialists</h3>
             <ul className={styles.contactList}>
               <li>
-                <span className={styles.contactLabel}>Phone / Call:</span>
-                <a href="tel:+918149217116" className={styles.contactVal}>+91 81492 17116</a>
+                <span className={styles.contactLabel}>Pro. Anil Korede:</span>
+                <a href="tel:+918850050126" className={styles.contactVal}>+91 88500 50126</a>
+                <a href="tel:+917666813545" className={styles.contactVal}>+91 76668 13545</a>
               </li>
               <li>
-                <span className={styles.contactLabel}>Email:</span>
-                <a href="mailto:lokesh.nistane1@gmail.com" className={styles.contactVal}>lokesh.nistane1@gmail.com</a>
-              </li>
-              <li>
-                <span className={styles.contactLabel}>Location:</span>
-                <span className={styles.contactVal}>Amravati, Maharashtra</span>
+                <span className={styles.contactLabel}>Pro. Vaibhav Dhanwat:</span>
+                <a href="tel:+919921440488" className={styles.contactVal}>+91 99214 40488</a>
               </li>
             </ul>
           </div>
 
-          {/* Column 4: Request Quotation CTA */}
+          {/* Column 4: Address & Location */}
           <div className={styles.newsCol}>
-            <h3 className={styles.colTitle}>Request a Quotation</h3>
+            <h3 className={styles.colTitle}>Office Location</h3>
             <p className={styles.newsDesc}>
-              Ready to switch to solar? Contact our engineering team for a customized installation estimate.
+              Shop No. 1, Gut No. 592, Property No. 118, Sawant Complex, Ground Floor, Ektanagar Paight Phata, Shiroli, Taluka Khed, District Pune - 410505
             </p>
             <Link href="/contact" className={styles.quoteCtaBtn}>
               <span>Get Free Quotation</span>
@@ -86,7 +82,7 @@ export default function Footer() {
         {/* Bottom copyright segment */}
         <div className={styles.bottomBar}>
           <p className={styles.copy}>
-            &copy; {new Date().getFullYear()} Swift Solar. All rights reserved. Est. 2023.
+            &copy; {new Date().getFullYear()} Aarambh Suntech Solution. All rights reserved. | GST: 27BXDPK0771P1Z1
           </p>
           <div className={styles.legalLinks}>
             <a href="#privacy">Privacy Policy</a>
@@ -98,7 +94,7 @@ export default function Footer() {
 
       {/* Backdrop Typography */}
       <div className={styles.backdropText}>
-        SOLAR
+        AARAMBH
       </div>
     </footer>
   );

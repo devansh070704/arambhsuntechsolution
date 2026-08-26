@@ -1,20 +1,21 @@
 /* Base variables and colors */
 :root {
   --font-geist-sans: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --color-primary: #0A1C3E;       /* Sleek luxury dark blue */
-  --color-primary-light: #162F5E; /* Slightly lighter navy for cards */
-  --color-accent-sky: #00B4D8;    /* Pure sky blue */
-  --color-accent-green: #10B981;  /* Clean energy green */
+  --color-primary: #0C1B26;       /* Premium Midnight Navy (from Logo 'A' & Camera) */
+  --color-primary-light: #162E40; /* Lighter midnight navy for cards */
+  --color-accent-sky: #D49B27;    /* Solar Amber Gold (from Logo Sun & Chevron) */
+  --color-accent-gold: #D49B27;   /* Solar Amber Gold */
+  --color-accent-green: #10B981;  /* Eco Green */
   --color-text-dark: #1E293B;     /* Crisp slate body text */
   --color-text-light: #64748B;    /* Muted gray text */
   --color-bg-white: #FFFFFF;      /* Clean background */
   --color-bg-light: #F8FAFC;      /* Light gray sections */
-  --color-bg-accent: #E0F2FE;     /* Light sky highlight */
+  --color-bg-accent: #FEF3C7;     /* Soft gold highlight */
   
-  --shadow-sm: 0 2px 8px rgba(10, 28, 62, 0.04);
-  --shadow-md: 0 8px 30px rgba(10, 28, 62, 0.08);
-  --shadow-lg: 0 16px 40px rgba(10, 28, 62, 0.12);
-  --shadow-glow: 0 0 20px rgba(0, 180, 216, 0.3);
+  --shadow-sm: 0 2px 8px rgba(12, 27, 38, 0.04);
+  --shadow-md: 0 8px 30px rgba(12, 27, 38, 0.08);
+  --shadow-lg: 0 16px 40px rgba(12, 27, 38, 0.12);
+  --shadow-glow: 0 0 20px rgba(212, 155, 39, 0.35);
   
   --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --border-radius-sm: 8px;
@@ -140,6 +141,11 @@ h1, h2, h3, h4, h5, h6 {
   .section-padding {
     padding: 60px 0;
   }
+
+  /* Prevent iOS Safari from zooming in on input focus on iPhone SE / mobile */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -157,6 +163,27 @@ h1, h2, h3, h4, h5, h6 {
 
   .grid-responsive-4 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Optimization for iPhone SE & narrow mobile viewports (<= 385px) */
+@media (max-width: 385px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .section-padding {
+    padding: 44px 0;
+  }
+
+  .page-header-title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .section-responsive-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
   }
 }
 

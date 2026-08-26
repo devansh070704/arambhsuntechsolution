@@ -11,9 +11,9 @@ export default function FeaturesGrid() {
         <ScrollReveal direction="up" delay={0}>
           <div className={styles.header}>
             <span className={styles.preTitle}>Simple &amp; Hassle-Free</span>
-            <h2 className={styles.title}>Going Solar Has Never Been This Easy.</h2>
+            <h2 className={styles.title}>Power, Security &amp; Electrical Services Made Easy.</h2>
             <p className={styles.subtitle}>
-              Swift Solar manages everything — from engineering and site audit to system installation, cleaning, and lifetime maintenance.
+              Aarambh Suntech Solution manages everything — from site audit and system design to installation, testing, and lifetime maintenance.
             </p>
           </div>
         </ScrollReveal>
@@ -29,7 +29,7 @@ export default function FeaturesGrid() {
                 <div className={styles.textWrapper}>
                   <h3 className={styles.featureTitle}>Real-Time Monitoring</h3>
                   <p className={styles.featureDesc}>
-                    Track your solar generation, savings, and battery status anytime via a clean mobile app dashboard.
+                    Track your solar generation and view CCTV mobile live feeds anytime on your smartphone.
                   </p>
                 </div>
               </div>
@@ -43,7 +43,7 @@ export default function FeaturesGrid() {
                 <div className={styles.textWrapper}>
                   <h3 className={styles.featureTitle}>Grid &amp; Hybrid Options</h3>
                   <p className={styles.featureDesc}>
-                    Select On-Grid utility synchronized systems or Hybrid battery backup for uninterrupted power.
+                    Select On-Grid MSEDCL net-metered solar systems or Hybrid battery backup for uninterrupted power.
                   </p>
                 </div>
               </div>
@@ -56,7 +56,7 @@ export default function FeaturesGrid() {
               <div className={styles.imageFrame}>
                 <img
                   src="/images/features_central.jpg"
-                  alt="Swift Solar Panel Array"
+                  alt="Aarambh Suntech Solution Projects"
                   className={styles.centerImage}
                 />
               </div>
@@ -71,9 +71,9 @@ export default function FeaturesGrid() {
                   <CalendarClock size={22} />
                 </div>
                 <div className={styles.textWrapper}>
-                  <h3 className={styles.featureTitle}>Fast Installation</h3>
+                  <h3 className={styles.featureTitle}>Fast Execution</h3>
                   <p className={styles.featureDesc}>
-                    Our trained crew installs your entire solar system in 1–2 days with zero disruption to your daily routine.
+                    Our specialized team executes solar, CCTV, and electrical installations quickly with zero disruption.
                   </p>
                 </div>
               </div>
@@ -85,9 +85,9 @@ export default function FeaturesGrid() {
                   <Zap size={22} />
                 </div>
                 <div className={styles.textWrapper}>
-                  <h3 className={styles.featureTitle}>25-30 Year Lifespan</h3>
+                  <h3 className={styles.featureTitle}>25-Year Performance</h3>
                   <p className={styles.featureDesc}>
-                    Every Swift Solar system utilizes Tier-1 Monocrystalline and Polycrystalline panels built for multi-decade operation.
+                    Every Aarambh Suntech solar system utilizes MNRE-approved panels built for multi-decade reliable operation.
                   </p>
                 </div>
               </div>

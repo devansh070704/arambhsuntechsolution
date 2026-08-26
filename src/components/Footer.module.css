@@ -29,26 +29,22 @@
   gap: 20px;
 }
 
-.logo {
-  display: flex;
+.logoBadge {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  width: fit-content;
+  transition: var(--transition-smooth);
 }
 
-.logoIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--color-accent-sky);
-  color: white;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-}
-
-.icon {
-  width: 20px;
-  height: 20px;
+.logoBadge:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
 .logoImage {
@@ -56,14 +52,27 @@
   width: auto;
   object-fit: contain;
   display: block;
-  border-radius: var(--border-radius-sm);
 }
 
-.logoText {
-  font-size: 1.5rem;
+.logoTextGroup {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brandTitle {
+  font-size: 1.22rem;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+  color: #0C1B26;
+}
+
+.brandSub {
+  font-size: 0.65rem;
   font-weight: 800;
-  color: white;
-  letter-spacing: -0.5px;
+  letter-spacing: 1px;
+  color: #D49B27;
+  text-transform: uppercase;
 }
 
 .motto {

@@ -10,7 +10,7 @@ export default function CTA() {
       <div className={styles.background}>
         <img
           src="/images/hero_solar.jpg"
-          alt="Swift Solar - Contact Us"
+          alt="Aarambh Suntech Solution - Contact Us"
           className={styles.bgImage}
         />
         <div className={styles.overlay}></div>
@@ -18,20 +18,20 @@ export default function CTA() {
 
       <div className={styles.container}>
         <div className={styles.content}>
-          <span className={styles.tag}>Switch To Clean Energy</span>
-          <h2 className={styles.title}>Ready To Install Solar Panels?</h2>
+          <span className={styles.tag}>Solar, CCTV &amp; Electrical Solutions</span>
+          <h2 className={styles.title}>Ready to Power &amp; Secure Your Project?</h2>
           <p className={styles.desc}>
-            Established in 2023, Swift Solar provides high-grade Monocrystalline, Polycrystalline, and Hybrid solar solutions alongside full installation, cleaning, and maintenance services.
+            Aarambh Suntech Solution provides high-efficiency Solar Rooftop Systems, HD &amp; IP CCTV Security Camera setup, and Turnkey Industrial &amp; Residential Electrical Contracting across Shiroli, Khed, Chakan &amp; Pune.
           </p>
 
           <div className={styles.actions}>
-            <a href="tel:+918149217116" className={styles.btnPrimary}>
+            <a href="tel:+918850050126" className={styles.btnPrimary}>
               <Phone size={18} />
-              Call Now: +91 81492 17116
+              Call Now: +91 88500 50126
             </a>
             <Link href="/contact" className={styles.btnSecondary}>
               <ArrowRight size={18} />
-              <span>Contact Us</span>
+              <span>Get Free Quote</span>
             </Link>
           </div>
         </div>

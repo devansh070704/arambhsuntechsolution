@@ -11,9 +11,9 @@ import CTA from '@/components/CTA';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Swift Solar Amravati | Premium Rooftop Solar Installations in Maharashtra',
-  description: 'Swift Solar provides clean, high-efficiency solar panel installations for homes, businesses & industries in Amravati & Maharashtra. Get up to ₹78,000 Govt subsidy under PM Surya Ghar. Call +91 81492 17116.',
-  keywords: ['swift solar', 'solar panels amravati', 'rooftop solar maharashtra', 'pm surya ghar subsidy', 'solar installation amravati', 'MSEDCL net metering'],
+  title: 'Solar Installation, CCTV & Electrical Services in Pune | Aarambh Suntech Solution',
+  description: 'Solar panel installation, AMC & repair, CCTV camera setup, and electrical work across Pune & Maharashtra. PM Surya Ghar subsidy up to ₹78,000. Free site visit. Call +91 88500 50126.',
+  keywords: ['solar panel installation pune', 'cctv camera installation pune', 'electrical contractor pune', 'pm surya ghar yojana pune', 'solar company pune', 'aarambh suntech solution'],
 };
 
 export default function Home() {

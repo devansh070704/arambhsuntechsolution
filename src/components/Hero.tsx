@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import styles from './Hero.module.css';
-import { ArrowRight, Star, ShieldCheck, Sun, Zap, Award, Sparkles, Send } from 'lucide-react';
+import { ArrowRight, Star, ShieldCheck, Sun, Zap, Award, Sparkles, Send, Video, Wrench } from 'lucide-react';
 import Link from 'next/link';
 import { sendLeadToAppsScript } from '@/lib/sendLead';
 
@@ -10,7 +10,8 @@ export default function Hero() {
     name: '',
     phone: '',
     city: '',
-    systemType: 'solar'
+    systemType: 'solar',
+    message: ''
   });
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -26,7 +27,7 @@ export default function Hero() {
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', phone: '', city: '', systemType: 'solar' });
+      setFormData({ name: '', phone: '', city: '', systemType: 'solar', message: '' });
     }, 5000);
   };
 
@@ -35,7 +36,7 @@ export default function Hero() {
       <div className={styles.backgroundOverlay}>
         <img
           src="/images/hero_solar.jpg"
-          alt="Swift Solar Rooftop Installation"
+          alt="Aarambh Suntech Solution Solar CCTV Electrical Setup"
           className={styles.heroImage}
         />
         <div className={styles.overlayGradient}></div>
@@ -47,16 +48,16 @@ export default function Hero() {
           <div className={styles.contentWrapper}>
             <div className={styles.tagline}>
               <span className={styles.tagDot}></span>
-              Amravati&apos;s Trusted Solar Specialist • Est. 2023
+              Solar Installation, CCTV & Electrical Services in Pune
             </div>
 
             <h1 className={styles.title}>
-              Power Your Home<br />
-              <span className={styles.highlightText}>With the Sun.</span>
+              Solar Panel, CCTV<br />
+              <span className={styles.highlightText}>&amp; Electrical — One Company.</span>
             </h1>
 
             <p className={styles.subtitle}>
-              Swift Solar engineers high-efficiency solar energy systems custom-tailored to power homes, businesses, and industrial units across Amravati &amp; Maharashtra.
+              Aarambh Suntech Solution is Pune&apos;s only company offering rooftop solar installation, CCTV camera setup, and electrical contracting together. PM Surya Ghar subsidy up to ₹78,000. Serving Khed, Shiroli, Chakan &amp; Pune.
             </p>
 
             <div className={styles.ctaGroup}>
@@ -78,12 +79,12 @@ export default function Hero() {
                   <Star size={16} fill="#EAB308" color="#EAB308" />
                   <Star size={16} fill="#EAB308" color="#EAB308" />
                 </div>
-                <span className={styles.badgeRatingText}>5.0 Customer Rating</span>
+                <span className={styles.badgeRatingText}>5.0 Trusted Technical Team</span>
               </div>
               <div className={styles.badgeDivider}></div>
               <div className={styles.badgeStats}>
-                <span className={styles.badgeStatNum}>500+</span>
-                <span className={styles.badgeStatLabel}>Solar Installations Delivered</span>
+                <span className={styles.badgeStatNum}>100%</span>
+                <span className={styles.badgeStatLabel}>Quality &amp; Safety Guaranteed</span>
               </div>
             </div>
           </div>
@@ -91,14 +92,14 @@ export default function Hero() {
           {/* Right Column: Contact Form */}
           <div className={styles.formWrapper}>
             <div className={styles.formGlassCard}>
-              <h3 className={styles.formTitle}>Request Free Consultation</h3>
-              <p className={styles.formSubtitle}>Get an expert solar evaluation &amp; technical assessment in 24 hours.</p>
+              <h3 className={styles.formTitle}>Get Free Site Assessment</h3>
+              <p className={styles.formSubtitle}>Get expert technical advice for Solar, CCTV or Electrical Works within 24 hours.</p>
 
               {submitted ? (
                 <div className={styles.successMessage}>
                   <div className={styles.successIcon}>✓</div>
                   <h4>Request Received!</h4>
-                  <p>Our solar engineering team will call you shortly to discuss your installation requirements.</p>
+                  <p>Anil Korede &amp; Vaibhav Dhanwat will contact you shortly to schedule your site inspection.</p>
                 </div>
               ) : (
                 <form className={styles.contactForm} onSubmit={handleSubmit}>
@@ -108,7 +109,7 @@ export default function Hero() {
                       id="hero-name"
                       type="text"
                       required
-                      placeholder="Rahul Sharma"
+                      placeholder="Aniket Patil"
                       className={styles.input}
                       value={formData.name}
                       onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -129,12 +130,12 @@ export default function Hero() {
                   </div>
 
                   <div className={styles.inputGroup}>
-                    <label htmlFor="hero-city" className={styles.label}>Your Location</label>
+                    <label htmlFor="hero-city" className={styles.label}>Your Location / Village</label>
                     <input
                       id="hero-city"
                       type="text"
                       required
-                      placeholder="Amravati, Maharashtra"
+                      placeholder="Shiroli / Khed / Chakan / Pune"
                       className={styles.input}
                       value={formData.city}
                       onChange={(e) => setFormData({...formData, city: e.target.value})}
@@ -142,18 +143,31 @@ export default function Hero() {
                   </div>
 
                   <div className={styles.inputGroup}>
-                    <label htmlFor="hero-type" className={styles.label}>System Type</label>
+                    <label htmlFor="hero-type" className={styles.label}>Required Service</label>
                     <select
                       id="hero-type"
                       className={styles.select}
                       value={formData.systemType}
                       onChange={(e) => setFormData({...formData, systemType: e.target.value})}
                     >
-                      <option value="monocrystalline">Monocrystalline Panels</option>
-                      <option value="polycrystalline">Polycrystalline Panels</option>
-                      <option value="hybrid">Hybrid Solar System</option>
-                      <option value="solar">On-Grid Solar System</option>
+                      <option value="solar">☀️ Solar Rooftop Solution</option>
+                      <option value="cctv">📹 CCTV Security Camera Setup</option>
+                      <option value="electrical">⚡ Industrial &amp; Residential Electrical Works</option>
+                      <option value="maintenance">🛠️ Maintenance &amp; Technical Repair</option>
                     </select>
+                  </div>
+
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="hero-msg" className={styles.label}>Message / Project Details</label>
+                    <textarea
+                      id="hero-msg"
+                      rows={2}
+                      placeholder="e.g. Need 5kW solar rooftop system or 4 CCTV cameras..."
+                      className={styles.input}
+                      style={{ resize: 'none' }}
+                      value={formData.message}
+                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    />
                   </div>
 
                   <button type="submit" className={styles.submitButton} disabled={isSubmitting}>
@@ -167,60 +181,29 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Generic Trust Partner Logos Bar */}
-      <div className={styles.trustBar}>
-        <div className={styles.trustContainer}>
-          <span className={styles.trustTitle}>Engineering Excellence</span>
-          <div className={styles.logosRow}>
-            <div className={styles.partnerLogo}>
-              <Sun size={20} className={styles.logoSvg} />
-              <span>High Efficiency</span>
-            </div>
-            <div className={styles.partnerLogo}>
-              <ShieldCheck size={20} className={styles.logoSvg} />
-              <span>Certified Components</span>
-            </div>
-            <div className={styles.partnerLogo}>
-              <Zap size={20} className={styles.logoSvg} />
-              <span>25+ Year Lifespan</span>
-            </div>
-            <div className={styles.partnerLogo}>
-              <Award size={20} className={styles.logoSvg} />
-              <span>Tier-1 Modules</span>
-            </div>
-            <div className={styles.partnerLogo}>
-              <Sparkles size={20} className={styles.logoSvg} />
-              <span>Est. 2023</span>
-            </div>
+      {/* Trust & Services Partner Bar */}
+      <div className={styles.partnersBar}>
+        <div className={styles.partnersContainer}>
+          <div className={styles.partnerLogo}>
+            <Sun size={20} className={styles.logoSvg} />
+            <span>Solar Power Systems</span>
           </div>
-        </div>
-      </div>
-
-      {/* Horizontal Instagram Banner Strip */}
-      <div className={styles.instagramStrip}>
-        <div className={styles.instagramContainer}>
-          <div className={styles.instagramLeft}>
-            <div className={styles.instagramIconBadge}>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
-              </svg>
-            </div>
-            <div className={styles.instagramText}>
-              <span className={styles.instagramTitle}>Follow Swift Solar on Instagram</span>
-              <span className={styles.instagramHandle}>@swiftsolar.co.in • See live rooftop installations, project videos &amp; clean energy tips</span>
-            </div>
+          <div className={styles.partnerLogo}>
+            <Video size={20} className={styles.logoSvg} />
+            <span>HD &amp; IP CCTV Solutions</span>
           </div>
-          <a
-            href="https://www.instagram.com/swiftsolar.co.in?utm_source=qr&igsh=Y3p6bDF6bHUyYjhk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.instagramBtn}
-          >
-            <span>Follow @swiftsolar.co.in</span>
-            <ArrowRight size={16} />
-          </a>
+          <div className={styles.partnerLogo}>
+            <Wrench size={20} className={styles.logoSvg} />
+            <span>Turnkey Electrical Works</span>
+          </div>
+          <div className={styles.partnerLogo}>
+            <ShieldCheck size={20} className={styles.logoSvg} />
+            <span>Certified Safety Components</span>
+          </div>
+          <div className={styles.partnerLogo}>
+            <Award size={20} className={styles.logoSvg} />
+            <span>Sawant Complex, Shiroli</span>
+          </div>
         </div>
       </div>
     </section>
