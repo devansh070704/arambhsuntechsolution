@@ -9,6 +9,7 @@ export default function Hero() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
+    email: '',
     city: '',
     systemType: 'solar',
     message: ''
@@ -27,7 +28,7 @@ export default function Hero() {
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
-      setFormData({ name: '', phone: '', city: '', systemType: 'solar', message: '' });
+      setFormData({ name: '', phone: '', email: '', city: '', systemType: 'solar', message: '' });
     }, 5000);
   };
 
@@ -126,6 +127,18 @@ export default function Hero() {
                       className={styles.input}
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                    />
+                  </div>
+
+                  <div className={styles.inputGroup}>
+                    <label htmlFor="hero-email" className={styles.label}>Email Address (Optional)</label>
+                    <input
+                      id="hero-email"
+                      type="email"
+                      placeholder="aniket@example.com"
+                      className={styles.input}
+                      value={formData.email}
+                      onChange={(e) => setFormData({...formData, email: e.target.value})}
                     />
                   </div>
 
