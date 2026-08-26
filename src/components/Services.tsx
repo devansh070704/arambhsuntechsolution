@@ -1,33 +1,33 @@
 "use client";
 import React, { useState } from 'react';
 import styles from './Services.module.css';
-import { ChevronDown, ArrowRight, Wrench, ShieldCheck, Sparkles, Sun } from 'lucide-react';
+import { ChevronDown, ArrowRight, Wrench, Video, Zap, Sun } from 'lucide-react';
 import Link from 'next/link';
 
 const SERVICES_DATA = [
   {
     id: 1,
-    title: 'Solar Panel Installation',
+    title: '☀️ Solar Panel Installation',
     icon: Sun,
-    description: 'Turnkey installation of Monocrystalline, Polycrystalline, On-Grid, and Hybrid solar systems designed specifically for maximum sunlight yield.',
+    description: 'On-grid and off-grid rooftop solar installation for homes, commercial complexes, and factories across Pune & Maharashtra. PM Surya Ghar subsidy assistance up to ₹78,000.',
   },
   {
     id: 2,
-    title: 'Solar Panel Maintenance',
-    icon: ShieldCheck,
-    description: 'Comprehensive health audits, inverter checks, wiring inspections, and preventative maintenance to ensure peak generation output.',
+    title: '📹 CCTV Camera Security Setup',
+    icon: Video,
+    description: 'Wired and wireless Hikvision, CP Plus, and Dahua HD/IP security camera setup for homes, shops, offices, and factories in Pune & Khed with mobile live viewing.',
   },
   {
     id: 3,
-    title: 'Solar Panel Repair',
-    icon: Wrench,
-    description: 'Fast, reliable diagnostic and corrective repairs for degraded modules, faulty inverters, tripped breakers, and wiring issues.',
+    title: '⚡ Turnkey Electrical Contracting',
+    icon: Zap,
+    description: 'Certified residential home wiring, commercial electrical panel installation, three-phase industrial connections, safety earthing, and electrical maintenance contracts.',
   },
   {
     id: 4,
-    title: 'Solar Panel Cleaning',
-    icon: Sparkles,
-    description: 'Specialized chemical-free cleaning services to remove dust, bird droppings, and urban debris, boosting energy production efficiency by up to 30%.',
+    title: '🛠️ Maintenance, Cleaning & AMC',
+    icon: Wrench,
+    description: 'Solar panel cleaning, solar inverter repair, CCTV DVR/NVR fault repair, and Annual Maintenance Contracts (AMC) to keep your systems performing at peak efficiency.',
   }
 ];
 
@@ -42,32 +42,32 @@ export default function Services() {
           <div className={styles.leftCol}>
             <span className={styles.preTitle}>Our Core Services</span>
             <h2 className={styles.sectionTitle}>
-              Professional Solar Services &amp; Maintenance
+              Solar, CCTV &amp; Turnkey Electrical Services
             </h2>
             <p className={styles.textDesc}>
-              Aarambh Suntech Solution provides complete lifecycle support — from precision installation of Solar, CCTV, and Electrical systems to ongoing maintenance and repairs.
+              Aarambh Suntech Solution provides complete lifecycle support — from precision installation of Solar, CCTV, and Electrical systems to ongoing maintenance and repairs across Shiroli, Khed &amp; Pune.
             </p>
-            <Link href="/contact" className={styles.btnLink}>
-              Request Service <ArrowRight size={18} style={{ marginLeft: 8 }} />
+            <Link href="/services" className={styles.btnLink}>
+              View All Services <ArrowRight size={18} style={{ marginLeft: 8 }} />
             </Link>
 
             {/* Side-by-side thumbnails */}
             <div className={styles.thumbnailGrid}>
               <div className={styles.thumbWrapper}>
                 <img
-                  src="/images/hero_solar.jpg"
-                  alt="Solar Installation"
+                  src="/images/cctv_installation.jpg"
+                  alt="CCTV Camera Installation Pune"
                   className={styles.thumbImage}
                 />
-                <span className={styles.thumbLabel}>Installation</span>
+                <span className={styles.thumbLabel}>CCTV Security</span>
               </div>
               <div className={styles.thumbWrapper}>
                 <img
-                  src="/images/solar_engineer.jpg"
-                  alt="Solar Maintenance and Cleaning"
+                  src="/images/electrical_works.jpg"
+                  alt="Turnkey Electrical Contracting Pune"
                   className={styles.thumbImage}
                 />
-                <span className={styles.thumbLabel}>Maintenance &amp; Care</span>
+                <span className={styles.thumbLabel}>Electrical Works</span>
               </div>
             </div>
           </div>

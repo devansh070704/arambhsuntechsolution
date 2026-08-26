@@ -27,7 +27,7 @@ export default function ServicesPage() {
     {
       title: '📹 CCTV Camera Installation in Pune',
       icon: Video,
-      image: '/images/features_central.jpg',
+      image: '/images/cctv_installation.jpg',
       desc: 'Wired and wireless CCTV camera installation for homes, shops, offices, warehouses, and factories in Pune & Khed. We install Hikvision, CP Plus, and Dahua HD/IP camera systems with night-vision, DVR/NVR storage, and remote mobile live viewing. Same-week installation. CCTV AMC service available.',
       highlights: [
         'Home CCTV Camera & Shop Security Camera Setup',
@@ -39,7 +39,7 @@ export default function ServicesPage() {
     {
       title: '⚡ Electrical Contractor in Pune',
       icon: Zap,
-      image: '/images/solar_engineer.jpg',
+      image: '/images/electrical_works.jpg',
       desc: 'Licensed electrical contractor for residential home wiring, commercial electrical panel installation, and industrial electrical contracting across Khed, Chakan & Pune. We handle complete wiring, DB panel setup, three-phase industrial connections, safety earthing, and electrical maintenance contracts.',
       highlights: [
         'Home Wiring & Residential Electrical Work',
