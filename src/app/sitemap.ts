@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://aarambhsuntech.in';
+  const baseUrl = 'https://arambhsuntech.in';
   const currentDate = new Date();
 
   return [

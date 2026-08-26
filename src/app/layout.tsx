@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://aarambhsuntech.in"),
+  metadataBase: new URL("https://arambhsuntech.in"),
   title: {
     default: "Solar Installation, CCTV & Electrical Services in Pune | Aarambh Suntech Solution",
     template: "%s | Aarambh Suntech Solution",
@@ -57,9 +57,10 @@ export const metadata: Metadata = {
     "cctv camera khed chakan rajgurunagar",
     "electrical contractor khed pune",
     "aarambh suntech solution",
+    "arambh suntech solution",
     "pm surya ghar subsidy maharashtra",
   ],
-  authors: [{ name: "Aarambh Suntech Solution", url: "https://aarambhsuntech.in" }],
+  authors: [{ name: "Aarambh Suntech Solution", url: "https://arambhsuntech.in" }],
   creator: "Aarambh Suntech Solution",
   publisher: "Aarambh Suntech Solution",
   formatDetection: {
@@ -75,7 +76,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Solar Installation, CCTV & Electrical Services in Pune | Aarambh Suntech Solution",
     description: "Solar panel installation, AMC & repair, CCTV camera setup, and electrical work across Pune & Maharashtra. Free site visit. Call Aarambh Suntech Solution today.",
-    url: "https://aarambhsuntech.in",
+    url: "https://arambhsuntech.in",
     siteName: "Aarambh Suntech Solution",
     images: [
       {
@@ -111,11 +112,11 @@ const jsonLdSchema = {
   "@type": "LocalBusiness",
   "name": "Aarambh Suntech Solution",
   "alternateName": "Aarambh Suntech Solution Shiroli",
-  "image": "https://aarambhsuntech.in/aarambh_logo.png",
-  "logo": "https://aarambhsuntech.in/aarambh_logo.png",
-  "url": "https://aarambhsuntech.in",
+  "image": "https://arambhsuntech.in/aarambh_logo.png",
+  "logo": "https://arambhsuntech.in/aarambh_logo.png",
+  "url": "https://arambhsuntech.in",
   "telephone": "+918850050126",
-  "email": "contact@aarambhsuntech.in",
+  "email": "contact@arambhsuntech.in",
   "vatID": "27BXDPK0771P1Z1",
   "taxID": "27BXDPK0771P1Z1",
   "priceRange": "₹₹",
