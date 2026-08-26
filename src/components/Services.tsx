@@ -55,19 +55,19 @@ export default function Services() {
             <div className={styles.thumbnailGrid}>
               <div className={styles.thumbWrapper}>
                 <img
-                  src="/images/cctv_installation.jpg"
-                  alt="CCTV Camera Installation Pune"
+                  src="/images/hero_solar.jpg"
+                  alt="Solar Rooftop Installation Pune"
                   className={styles.thumbImage}
                 />
-                <span className={styles.thumbLabel}>CCTV Security</span>
+                <span className={styles.thumbLabel}>Solar Rooftop</span>
               </div>
               <div className={styles.thumbWrapper}>
                 <img
-                  src="/images/electrical_works.jpg"
-                  alt="Turnkey Electrical Contracting Pune"
+                  src="/images/solar_engineer.jpg"
+                  alt="Solar Maintenance & Technical Care Pune"
                   className={styles.thumbImage}
                 />
-                <span className={styles.thumbLabel}>Electrical Works</span>
+                <span className={styles.thumbLabel}>Maintenance &amp; Care</span>
               </div>
             </div>
           </div>
