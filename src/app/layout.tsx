@@ -132,10 +132,10 @@ const jsonLdSchema = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": 18.8471,
-    "longitude": 73.8824
+    "latitude": 18.827678,
+    "longitude": 73.876722
   },
-  "hasMap": "https://maps.google.com/?q=Shiroli+Khed+Pune+410505",
+  "hasMap": "https://maps.google.com/?q=18.827678,73.876722",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",

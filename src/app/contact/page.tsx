@@ -305,7 +305,7 @@ export default function ContactPage() {
             border: '1px solid rgba(12, 27, 38, 0.08)'
           }}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15104.978292850028!2d73.872412!3d18.847124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b77c5d555555%3A0x1111111111111111!2sShiroli%2C%20Maharashtra%20410505!5e0!3m2!1sen!2sin!4v1787748000000!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3776.33699305659!2d73.87414567519916!3d18.82767808232652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDQ5JzM5LjYiTiA3M8KwNTInMzYuMiJF!5e0!3m2!1sen!2sin!4v1787807735782!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
